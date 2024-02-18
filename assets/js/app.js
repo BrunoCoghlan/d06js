@@ -64,7 +64,7 @@ const setupChart = ({ serie }) => {
     const labels = record.map((e) => {
         const fecha = new Date(e.fecha)
         return `${fecha.getDate()}/${fecha.getMonth() + 1}/${fecha.getFullYear()}`
-    })
+    }).reverse()
     const value = record.map((e) => {
         return e.valor
     })
