@@ -13,16 +13,17 @@
 
     <div class="container">
         <h4>Pesos CLP</h4>
-        <input type="number" placeholder="Ingrese el monto en CLP">
+        <input id="input" type="number" placeholder="Ingrese el monto en CLP">
         <p>Moneda a convertir:</p>
         <select name="coins" id="coins">
             <option value="" disabled selected hidden>Selecciona una opción</option>
+            <option value=""></option>
         </select>
-        <button>Buscar</button>
+        <button id="btn">Buscar</button>
         <p id="result">Resultado:</p>
     </div>
     <div id="myChart">
-
+        <canvas></canvas>
     </div>
 
     <script src="./assets/js/app.js"></script>
